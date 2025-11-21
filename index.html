@@ -6,24 +6,35 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 60px;
+            margin: 40px;
         }
-        img {
-            width: 180px;
+
+        /* Place photo in the top-left corner */
+        .profile-photo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 160px;
             border-radius: 50%;
-            margin: 20px;
+        }
+
+        /* Center welcome text */
+        .content {
+            text-align: center;
+            margin-top: 200px;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Welcome! I am Yang Qu</h1>
-    <p>This is my personal website hosted at <strong>YangQ2023.github.io</strong>.</p>
+    <!-- Photo in top-left -->
+    <img src="Qu-Yang-500web.jpg" class="profile-photo" alt="Yang Qu">
 
-    <!-- Your photo -->
-    <img src="Qu-Yang-500web.jpg" alt="Yang Qu">
+    <!-- Centered text -->
+    <div class="content">
+        <h1>Welcome! I am Yang Qu</h1>
+    </div>
 
 </body>
 </html>
