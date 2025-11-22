@@ -10,17 +10,22 @@
             line-height: 1.6;
         }
 
-        /* Profile photo top-left */
-        .profile-photo {
-            float: left;
-            width: 150px;
-            margin-right: 25px;
-            border-radius: 50%;
+        /* Main layout: text left, photo right */
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            max-width: 1100px;
         }
 
-        /* Main intro section */
-        .intro {
+        .left {
+            flex: 2;
             max-width: 700px;
+        }
+
+        .right {
+            flex: 1;
+            text-align: center;
         }
 
         h1 {
@@ -32,9 +37,26 @@
             font-size: 18px;
         }
 
+        h2 {
+            margin-top: 25px;
+            font-size: 22px;
+        }
+
+        ul {
+            font-size: 17px;
+            padding-left: 20px;
+        }
+
+        /* Profile photo on the right */
+        .profile-photo {
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
         /* CV link styling */
         .cv-link {
-            margin-top: 25px;
+            margin-top: 20px;
             font-size: 20px;
         }
 
@@ -47,30 +69,175 @@
 
 <body>
 
-    <!-- Photo -->
-    <img src="Qu-Yang-500web.jpg" class="profile-photo" alt="Yang Qu">
+    <div class="container">
 
-    <!-- Intro content -->
-    <div class="intro">
-        <h1>Hello, I'm Yang Qu</h1>
+        <!-- LEFT: text content -->
+        <div class="left">
+            <h1>Hello, I'm Yang Qu</h1>
 
-        <p>
-            I am a Research Associate in Biostatistics at North Carolina State University's College of Veterinary Medicine, 
-            where I am passionate about using data to strengthen veterinary and biomedical research. 
-            I work with interdisciplinary teams to advance animal and human health, contributing expertise in 
-            study design and statistical inference to ensure research is rigorous and reliable. 
-            My goal is to turn complex data into clear, practical insights that drive meaningful research and 
-            serve the broader community.
-        </p>
+            <p>
+                I am a Research Associate in Biostatistics at North Carolina State University's College of Veterinary Medicine,
+                where I am passionate about using data to strengthen veterinary and biomedical research. I work with
+                interdisciplinary teams to advance animal and human health, contributing expertise in study design and
+                statistical inference to ensure research is rigorous and reliable. My goal is to turn complex data into
+                clear, practical insights that drive meaningful research and serve the broader community.
+            </p>
 
-        <p>
-            Welcome to my personal website, where I share my research interests, statistical projects, and professional updates.
-        </p>
+            <p>
+                My expertise spans statistical inference, regression and mixed-effects modelling, experimental design, and
+                applied mathematics. I work extensively with R, SAS, and Python to support clinical trials, observational
+                studies, and translational research in veterinary and animal science.
+            </p>
 
-        <!-- CV Download Link -->
-        <p class="cv-link">
-            📄 <a href="Yang Qu CV NCSU .pdf" target="_blank">CV</a>
-        </p>
+            <h2>Selected Research in Animal Nutrition & Health</h2>
+            <ul>
+                <li>
+                    <a href="https://doi.org/10.3168/jds.2013-7154" target="_blank">
+                        Potential risk indicators of retained placenta and other diseases in multiparous cows
+                    </a>
+                    – Journal of Dairy Science, 2014.
+                </li>
+                <li>
+                    Depleted serum vitamin E concentrations precede left displaced abomasum in early-lactation dairy cows –
+                    Journal of Dairy Science.
+                </li>
+            </ul>
+
+            <p class="cv-link">
+                📄 <a href="<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yang Qu | Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        /* Main layout: text left, photo right */
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            max-width: 1100px;
+        }
+
+        .left {
+            flex: 2;
+            max-width: 700px;
+        }
+
+        .right {
+            flex: 1;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            font-size: 22px;
+        }
+
+        ul {
+            font-size: 17px;
+            padding-left: 20px;
+        }
+
+        /* Profile photo on the right */
+        .profile-photo {
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        /* CV link styling */
+        .cv-link {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .cv-link a {
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT: text content -->
+        <div class="left">
+            <h1>Hello, I'm Yang Qu</h1>
+
+            <p>
+                I am a Research Associate in Biostatistics at North Carolina State University's College of Veterinary Medicine,
+                where I am passionate about using data to strengthen veterinary and biomedical research. I work with
+                interdisciplinary teams to advance animal and human health, contributing expertise in study design and
+                statistical inference to ensure research is rigorous and reliable. My goal is to turn complex data into
+                clear, practical insights that drive meaningful research and serve the broader community.
+            </p>
+
+            <p>
+                My expertise spans statistical inference, regression and mixed-effects modelling, experimental design, and
+                applied mathematics. I work extensively with R, SAS, and Python to support clinical trials, observational
+                studies, and translational research in veterinary and animal science.
+            </p>
+
+            <h2>Selected Research in Animal Nutrition & Health</h2>
+            <ul>
+                <li>
+                    <a href="https://doi.org/10.3168/jds.2013-7154" target="_blank">
+                        Potential risk indicators of retained placenta and other diseases in multiparous cows
+                    </a>
+                    – Journal of Dairy Science, 2014.
+                </li>
+                <li>
+                    Depleted serum vitamin E concentrations precede left displaced abomasum in early-lactation dairy cows –
+                    Journal of Dairy Science.
+                </li>
+            </ul>
+
+            <p class="cv-link">
+                📄 <a href="YangQu CV NCSU.pdf" target="_blank">CV</a>
+            </p>
+        </div>
+
+        <!-- RIGHT: photo (and optional future figure) -->
+        <div class="right">
+            <img src="Qu-Yang-500web.jpg" class="profile-photo" alt="Yang Qu">
+            <!-- If you later add a veterinary/animal figure, place it below:
+            <img src="vet_figure.jpg" alt="Veterinary research" style="width:220px; margin-top:15px; border-radius:12px;">
+            -->
+        </div>
+
+    </div>
+
+</body>
+</html>
+" target="_blank">CV</a>
+            </p>
+        </div>
+
+        <!-- RIGHT: photo (and optional future figure) -->
+        <div class="right">
+            <img src="Qu-Yang-500web.jpg" class="profile-photo" alt="Yang Qu">
+            <!-- If you later add a veterinary/animal figure, place it below:
+            <img src="vet_figure.jpg" alt="Veterinary research" style="width:220px; margin-top:15px; border-radius:12px;">
+            -->
+        </div>
+
     </div>
 
 </body>
