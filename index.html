@@ -7,34 +7,62 @@
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
+            line-height: 1.6;
         }
 
-        /* Place photo in the top-left corner */
+        /* Profile photo top-left */
         .profile-photo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 160px;
+            float: left;
+            width: 150px;
+            margin-right: 25px;
             border-radius: 50%;
         }
 
-        /* Center welcome text */
-        .content {
-            text-align: center;
-            margin-top: 200px;
+        /* Main intro section */
+        .intro {
+            max-width: 700px;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        /* Add subtle divider */
+        hr {
+            margin: 30px 0;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Photo in top-left -->
+    <!-- Photo -->
     <img src="Qu-Yang-500web.jpg" class="profile-photo" alt="Yang Qu">
 
-    <!-- Centered text -->
-    <div class="content">
-        <h1>Welcome! I am Yang Qu</h1>
+    <!-- Intro content -->
+    <div class="intro">
+        <h1>Hello, I'm Yang Qu</h1>
+        <p>
+            Welcome to my personal website.  
+            I am a biostatistician and researcher at the North Carolina State University College of Veterinary Medicine.
+        </p>
+        <p>
+            Here I share my research interests, statistical projects, and professional updates.
+        </p>
     </div>
+
+    <hr>
+
+    <p>
+        This website is hosted on <strong>GitHub Pages</strong> at:  
+        <strong>YangQ2023.github.io</strong>
+    </p>
 
 </body>
 </html>
+
